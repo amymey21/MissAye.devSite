@@ -1,16 +1,32 @@
 <script setup>
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
 
 </script>
 
 <template>
-  <header>
-    <nav>
+  <div class="container-fluid p-4">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <RouterLink to="/about" class="nav-link" :class="{ active: route.path === '/about' }">About</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink to="/samples" class="nav-link" :class="{ active: route.path === '/samples' }">Samples</RouterLink>
+      </li>
+      <li class="nav-item">
+        <RouterLink to="/contact" class="nav-link" :class="{ active: route.path === '/contact' }">Contact</RouterLink>
+      </li>
+    </ul>
 
-    </nav>
-  </header>
-  <main>
-    <h1>Portafolio profesional</h1>
-  </main>
+    <div class="tab-content mt-3">
+      <RouterView />
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.nav-link.active {
+  color: #0595a8;
+}
+</style>
