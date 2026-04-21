@@ -6,7 +6,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="container-fluid p-4">
+  <div class="container-fluid pt-2">
     <ul class="nav nav-tabs">
       <li class="nav-item">
         <RouterLink to="/about" class="nav-link" :class="{ active: route.path === '/about' }">About</RouterLink>

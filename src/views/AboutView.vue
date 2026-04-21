@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-  <div class="container m-5 p-4">
+  <div class="container">
     <img src="/src/assets/img/IMG_20250306_230056615.jpg" alt="Foto de Ayelén"
       class="img-fluid- rounded-circle d-flex mx-auto mt-3" style="width: 150px; height: 150px; object-fit: cover;">
     <h1 class="rouge-script-regular d-flex">Ayelén Silva</h1>
