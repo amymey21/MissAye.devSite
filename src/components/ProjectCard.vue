@@ -9,7 +9,10 @@ defineProps({
 
 <template>
   <div class="card mb-3">
-    <img :src="image" class="card-img-top pt-3" height="250" :alt="title" />
+    <img v-if="image" :src="image" class="card-img-top pt-3" height="250" :alt="title" />
+    <div v-else class="card-img-top d-flex align-items-center justify-content-center bg-light text-muted" style="height: 250px;">
+      Imagen no disponible
+    </div>
     <div class="card-body">
       <h5 class="card-title">{{ title }}</h5>
       <p class="card-text">{{ description }}</p>

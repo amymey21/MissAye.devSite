@@ -1,5 +1,5 @@
 <script setup>
-
+import logoImage from '@/assets/img/ADevLogo.svg';
 </script>
 
 <template>
@@ -7,7 +7,7 @@
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container-fluid m-0">
         <RouterLink class="navbar-brand" to="/">
-          <img src="/src/assets/img/ADevLogo.svg" alt="Logo" height="60" />
+          <img :src="logoImage" alt="Logo" height="60" />
         </RouterLink>
       </div>
     </nav>

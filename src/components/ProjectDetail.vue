@@ -1,5 +1,5 @@
 <script setup>
-import projects from '../data/projects.json'
+import projects from '../data/projects.js'
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
 import ProjectCard from './ProjectCard.vue';

@@ -12,7 +12,7 @@ const route = useRoute();
         <RouterLink to="/about" class="nav-link" :class="{ active: route.path === '/about' }">About</RouterLink>
       </li>
       <li class="nav-item">
-        <RouterLink to="/samples" class="nav-link" :class="{ active: route.path.startsWith('/samples') }">Samples
+        <RouterLink to="/samples" class="nav-link" :class="{ active: route.path.startsWith('/samples') }">Portfolio
         </RouterLink>
       </li>
       <li class="nav-item">
