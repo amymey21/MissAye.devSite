@@ -21,6 +21,17 @@ const router = createRouter({
           path: "samples",
           name: "samples",
           component: () => import("@/views/SamplesView.vue"),
+          children: [
+            {
+              path: "",
+              redirect: { name: "project-detail", params: { id: "1" } },
+            },
+            {
+              path: ":id",
+              name: "project-detail",
+              component: () => import("@/components/ProjectDetail.vue"),
+            },
+          ],
         },
         {
           path: "contact",

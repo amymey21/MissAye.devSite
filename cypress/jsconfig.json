@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["es5", "dom"],
+    "target": "es2020",
+    "lib": ["es2020", "dom"],
+    "ignoreDeprecations": "6.0",
     "types": ["cypress"]
   },
   "include": ["./e2e/**/*", "./support/**/*"],

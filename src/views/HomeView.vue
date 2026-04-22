@@ -6,13 +6,14 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="container-fluid pt-2">
-    <ul class="nav nav-tabs">
+  <div class="container pt-2">
+    <ul class="nav nav-tabs justify-content-end">
       <li class="nav-item">
         <RouterLink to="/about" class="nav-link" :class="{ active: route.path === '/about' }">About</RouterLink>
       </li>
       <li class="nav-item">
-        <RouterLink to="/samples" class="nav-link" :class="{ active: route.path === '/samples' }">Samples</RouterLink>
+        <RouterLink to="/samples" class="nav-link" :class="{ active: route.path.startsWith('/samples') }">Samples
+        </RouterLink>
       </li>
       <li class="nav-item">
         <RouterLink to="/contact" class="nav-link" :class="{ active: route.path === '/contact' }">Contact</RouterLink>
