@@ -1,5 +1,5 @@
-import alkeImage from "@/assets/img/Alke1.webp";
-import booklistImage from "@/assets/img/Booklist1.webp";
+import alkeImage from "@/assets/img/Alke1.jpg";
+import booklistImage from "@/assets/img/Booklist1.jpg";
 
 const projects = [
   {
